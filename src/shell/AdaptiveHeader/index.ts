@@ -1,0 +1,1 @@
+export { AdaptiveHeader } from './AdaptiveHeader'
