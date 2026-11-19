@@ -1,0 +1,13 @@
+{
+  "name": "NADI",
+  "short_name": "NADI",
+  "description": "Ruang pengelolaan pribadi: keuangan, progress harian, dan project.",
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090B0F",
+  "theme_color": "#090B0F"
+}

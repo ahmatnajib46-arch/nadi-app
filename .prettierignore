@@ -1,0 +1,13 @@
+# OpenCode tooling directory (managed by plugins, not project source)
+.opencode/
+
+node_modules/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+package-lock.json
+
+# Documentation is the project source of truth; never auto-format it
+docs/
