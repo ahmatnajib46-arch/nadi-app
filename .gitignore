@@ -10,3 +10,19 @@ coverage/
 playwright-report/
 test-results/
 .vscode/
+
+# Tooling / build artifacts
+*.tsbuildinfo
+.vite/
+dev-dist/
+*.local
+
+# OpenCode runtime artifacts.
+# NOTE: .opencode/opencode.json (plugin config) is intentionally tracked;
+# do not ignore the whole .opencode/ directory.
+.opencode/error-log.txt
+.opencode/memory/
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock

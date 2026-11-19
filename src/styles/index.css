@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/*
+ * NADI Design System — sumber tunggal design tokens (Blueprint §7.3).
+ *
+ * Semua warna, radius, spacing, tipografi, dan shadow didefinisikan di sini
+ * dan diekspos sebagai CSS Variables oleh Tailwind v4. Komponen tidak boleh
+ * menulis nilai warna hardcoded.
+ */
+@theme {
+  /* Palet warna (PRD §3.1) */
+  --color-deep-emerald: #075747;
+  --color-dark-forest: #092c27;
+  --color-near-black: #090b0f;
+  --color-charcoal: #17191d;
+  --color-soft-mint: #55e6b5;
+  --color-soft-white: #dce7e3;
+  --color-muted-sage: #91a49f;
+
+  /* Tipografi — system stack, tanpa webfont agar tetap offline-first */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Radius */
+  --radius-card: 1rem;
+  --radius-sheet: 1.5rem;
+  --radius-pill: 9999px;
+
+  /* Spacing semantik */
+  --spacing-gutter: 1rem;
+  --spacing-section: 1.5rem;
+  --spacing-page: 2rem;
+
+  /* Elevasi */
+  --shadow-card: 0 8px 24px rgb(0 0 0 / 0.32);
+  --shadow-sheet: 0 -12px 40px rgb(0 0 0 / 0.45);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-near-black);
+    color: var(--color-soft-white);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
